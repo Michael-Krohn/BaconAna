@@ -10,13 +10,13 @@ namespace baconhep
     public:
       TAddJet():
       index(-1),
-      E(0),pT(0),eta(0),phi(0),SDmass(0),
+      E(0),pT(0),eta(0),phi(0),SDmass(0),PrunedMass(0),
       tau1(-1), tau2(-1), tau3(-1), tau4(-1)
       {}
       ~TAddJet(){}
       
       unsigned int index;                                                   // index in original jet collection
-      double E, pT, eta, phi, SDmass;
+      double E, pT, eta, phi, SDmass, PrunedMass;
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
     ClassDef(TAddJet,13)
   };
